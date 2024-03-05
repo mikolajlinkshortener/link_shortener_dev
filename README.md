@@ -24,5 +24,5 @@ TO_DO run migrations in Dockerfile
 Go to django container and run migrations
 
 *Pro tip:  
-Open both backend and frontend in diffrent VSC Windows, do not use this repo for development.
+Open both backend and frontend in diffrent VSC Windows, do not use this project structure for development.
 
