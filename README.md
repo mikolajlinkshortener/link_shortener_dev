@@ -26,7 +26,7 @@ python manage.py migrate
 ```
 
 
-if you wanted access to django admin create superuser in container
+if you wanted access to django admin create superuser in container. In djago admin you can check how many times short link was used and ip and user agent of the user who added the link
 ```
 python manage.py createsuperuser
 ```
