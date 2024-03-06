@@ -20,8 +20,17 @@ docker-compose build
 docker-compose up
 ```
 
-TO_DO run migrations in Dockerfile  
-Go to django container and run migrations
+Go to django container and run:   TO_DO run migrations in Dockerfile  
+```
+python manage.py migrate
+```
+
+
+if you wanted access to django admin create superuser in container
+```
+python manage.py createsuperuser
+```
+
 
 *Pro tip:  
 Open both backend and frontend in diffrent VSC Windows, do not use this project structure for development.
