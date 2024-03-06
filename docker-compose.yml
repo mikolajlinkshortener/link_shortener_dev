@@ -24,11 +24,11 @@ services:
       - POSTGRES_DB=hello_django_dev
   front:
     build: ./shorten_links_frontend/
-    container_name: vue_app_container
     ports:
       - '8080:8080'
     volumes:
-      - ./shorten_links_frontend/:/app
+      - ./shorten_links_frontend/:/usr/src/app/
+      - /usr/src/app/node_modules
     command: 'npm run serve' 
 
 volumes:
